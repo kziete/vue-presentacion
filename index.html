@@ -1,34 +1,12 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-    <title>Aguante Vue!</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-</head>
-
-<body>
-
-    <div id="app">
-        clicks: {{ clicks }} <br>
-        <button v-on:click="clickear">Click</button> <br> <br> <br>
-        
-        <p>{{ message }}</p> 
-        <input v-model="message">
-    </div>
-
-    <script type="text/javascript">
-        var app = new Vue({
-            el: '#app',
-            data: {
-                clicks: 0,
-                message: ""
-            },
-            methods:{
-                clickear: function(){
-                    this.clicks++;
-                }
-            }
-        })
-    </script>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>vue-presentacion</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
