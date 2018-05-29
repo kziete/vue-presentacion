@@ -6,14 +6,26 @@
 </head>
 
 <body>
+
     <div id="app">
-        {{ message }}
+        clicks: {{ clicks }} <br>
+        <button v-on:click="clickear">Click</button> <br> <br> <br>
+        
+        <p>{{ message }}</p> 
+        <input v-model="message">
     </div>
+
     <script type="text/javascript">
         var app = new Vue({
             el: '#app',
             data: {
-                message: 'Hello Vue!'
+                clicks: 0,
+                message: ""
+            },
+            methods:{
+                clickear: function(){
+                    this.clicks++;
+                }
             }
         })
     </script>
